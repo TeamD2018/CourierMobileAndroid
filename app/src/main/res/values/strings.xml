@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CourierMobile</string>
+    <string name="create_order">Создать заказ</string>
+    <string name="create_courier">Создать курьера</string>
+    <string name="delete_courier">Удалить курьера</string>
+    <string name="delete_order">Удалить заказ</string>
+    <string name="name_hint">Имя</string>
+    <string name="phone_hint">Телефон</string>
+    <string name="source_hint">Откуда</string>
+    <string name="dest_hint">Куда</string>
+</resources>

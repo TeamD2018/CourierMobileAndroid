@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <EditText
+            android:id="@+id/name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/name_hint"
+            android:inputType="text"/>
+    <EditText android:id="@+id/phone_input"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="@string/phone_hint"
+              android:layout_gravity="center"
+              android:inputType="phone"/>
+    <Button android:id="@+id/create_courier_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create_courier"/>
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/delete_courier"
+            android:text="@string/delete_courier"/>
+
+    <EditText
+            android:id="@+id/source_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/source_hint"
+            android:inputType="text"/>
+    <EditText android:id="@+id/destination_input"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="@string/dest_hint"
+              android:inputType="text"/>
+    <Button android:id="@+id/create_order_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create_order"/>
+
+
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/delete_order"
+            android:text="@string/delete_order"/>
+
+</LinearLayout>
