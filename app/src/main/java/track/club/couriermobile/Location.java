@@ -1,7 +1,11 @@
 package track.club.couriermobile;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Location {
+    @SerializedName("point")
     private GPSPoint point;
+    @SerializedName("address")
     private String address;
 
     public Location(GPSPoint point) {

@@ -23,11 +23,16 @@ public class CourierAPI {
     }
 
     public void Create(Courier courier, final Consumer<Courier> consumer) {
-        RequestBody body = RequestBody.create(JSON, gson.toJson(courier));
+        Gson g = new GsonBuilder()
+                .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
+                .create();
+        String json = g.toJson(courier);
+        RequestBody body = RequestBody.create(JSON, json);
         Request request = new Request.Builder()
                 .post(body)
                 .url("https://track-delivery.club/api/v1/couriers")
                 .build();
+        Log.d("wutafuck", json);
         client.newCall(request).enqueue(restAcceptor.onResponse(consumer, Courier.class));
     }
 

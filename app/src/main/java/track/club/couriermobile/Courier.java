@@ -1,9 +1,17 @@
 package track.club.couriermobile;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Courier {
+    @SerializedName("id")
     private String id;
+    @SerializedName("name")
     private String name;
+
+    @SerializedName("phone")
     private String phone;
+
+    @SerializedName("location")
     private Location location;
 
     public Courier(String name, String phone) {

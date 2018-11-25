@@ -30,6 +30,7 @@ public class ForegroundStub extends Service {
             notificationManager.createNotificationChannel(notificationChannel);
             builder = new NotificationCompat.Builder(getApplicationContext(), notificationChannel.getId());
         } else {
+            //noinspection deprecation
             builder = new NotificationCompat.Builder(getApplicationContext());
         }
         Notification notification = builder

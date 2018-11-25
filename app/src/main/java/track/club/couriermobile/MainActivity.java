@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
             EditText name = findViewById(R.id.name_input);
             EditText phone = findViewById(R.id.phone_input);
             Courier courier = new Courier(name.getText().toString(), phone.getText().toString());
+            Log.d(courier.getName(), courier.getPhone());
             courierAPI.Create(courier, created -> runOnUiThread(() -> courierID = created.getId()));
         });
 

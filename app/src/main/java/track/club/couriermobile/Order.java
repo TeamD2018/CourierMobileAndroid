@@ -1,10 +1,17 @@
 package track.club.couriermobile;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Order {
+    @SerializedName("source")
     private Location source;
+    @SerializedName("destination")
     private Location destination;
+    @SerializedName("id")
     private String id;
+    @SerializedName("courier_id")
     private String courierID;
+    @SerializedName("order_number")
     private Integer orderNumber;
 
     public Order(String id, String courierID) {
